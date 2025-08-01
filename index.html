@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="de" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SWN-Bauunternehmen - Ihr Partner für Bauprojekte</title>
+    <meta name="description" content="Ihr zuverlässiger Partner für Rohbau, Sanierung und schlüsselfertiges Bauen in Hamburg und Umgebung. Kompetenz ist unsere Stärke und Qualität ist unser Versprechen.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-white font-sans antialiased text-gray-800">
+
+    <!-- Header -->
+    <header id="header" class="sticky top-0 z-50 transition-all duration-300">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-gray-800">
+                SWN<span class="text-red-600">.</span>Bau
+            </a>
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="#services" class="nav-link text-gray-600 hover:text-red-600 transition-colors font-medium">Leistungen</a>
+                <a href="#why-us" class="nav-link text-gray-600 hover:text-red-600 transition-colors font-medium">Unsere Werte</a>
+                <a href="#projects" class="nav-link text-gray-600 hover:text-red-600 transition-colors font-medium">Galerie</a>
+                <a href="#about" class="nav-link text-gray-600 hover:text-red-600 transition-colors font-medium">Über Uns</a>
+                <a href="#contact" class="nav-link text-gray-600 hover:text-red-600 transition-colors font-medium">Kontakt</a>
+            </nav>
+            <div class="hidden md:flex items-center space-x-4">
+                <a href="tel:+4947623638258" class="flex items-center text-gray-700 hover:text-red-600 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                    <span>04762 3638258</span>
+                </a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-gray-700 focus:outline-none">
+                    <svg id="menu-open-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                    <svg id="menu-close-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="hidden"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg absolute top-full left-0 w-full">
+            <nav class="flex flex-col items-center space-y-4 p-6">
+                <a href="#services" class="nav-link text-gray-600 hover:text-red-600 transition-colors font-medium py-2">Leistungen</a>
+                <a href="#why-us" class="nav-link text-gray-600 hover:text-red-600 transition-colors font-medium py-2">Unsere Werte</a>
+                <a href="#projects" class="nav-link text-gray-600 hover:text-red-600 transition-colors font-medium py-2">Galerie</a>
+                <a href="#about" class="nav-link text-gray-600 hover:text-red-600 transition-colors font-medium py-2">Über Uns</a>
+                <a href="#contact" class="nav-link text-gray-600 hover:text-red-600 transition-colors font-medium py-2">Kontakt</a>
+                <div class="border-t w-full my-4"></div>
+                <a href="tel:+4947623638258" class="flex items-center text-gray-700 hover:text-red-600 transition-colors py-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                    <span>04762 3638258</span>
+                </a>
+                <a href="https://wa.me/4947623638258" target="_blank" rel="noopener noreferrer" class="bg-green-500 text-white px-4 py-3 rounded-lg flex items-center justify-center w-full hover:bg-green-600 transition-colors shadow-sm">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+                    <span>Chat via WhatsApp</span>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative h-screen min-h-[700px] flex items-center justify-center text-white">
+            <div class="absolute inset-0 bg-black/60 z-10"></div>
+            <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Moderne Baustelle bei Sonnenuntergang" class="absolute inset-0 w-full h-full object-cover">
+            <div class="relative z-20 text-center px-6">
+                <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight leading-tight mb-4 animate-fade-in-down">Herzlich Willkommen bei SWN-Bau</h1>
+                <p class="text-lg md:text-xl max-w-3xl mx-auto text-gray-200 mb-8 animate-fade-in-up animation-delay-300">Kompetenz ist unsere Stärke und Qualität ist unser Versprechen.</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up animation-delay-600">
+                    <a href="#contact" class="nav-link bg-red-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-red-700 transition-all duration-300 transform hover:scale-105 shadow-lg">Sprechen Sie mit uns</a>
+                    <a href="#services" class="nav-link bg-white/20 backdrop-blur-sm border border-white/50 text-white font-bold py-3 px-8 rounded-lg hover:bg-white/30 transition-all duration-300 transform hover:scale-105 shadow-lg">Unsere Leistungen</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="animated-section py-16 md:py-24 px-6 md:px-8 bg-gray-50">
+            <div class="container mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Unsere Leistungen</h2>
+                    <p class="text-lg text-gray-600 mt-2 max-w-2xl mx-auto">Wir finden für Ihre Anliegen immer die richtigen Lösungen.</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Service Card 1 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 text-center flex flex-col">
+                        <div class="flex justify-center mb-6"><div class="bg-red-100 p-4 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-red-600"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg></div></div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-3">Sanieren</h3>
+                        <p class="text-gray-600 flex-grow">Vom Umbau Ihrer Büroräume bis zur Grundsanierung des gesamten Gebäudes: Wenden Sie sich für die Renovierung Ihrer Immobilie getrost an uns.</p>
+                        <a href="#contact" class="nav-link mt-6 text-red-600 font-semibold hover:underline">Mehr dazu &rarr;</a>
+                    </div>
+                    <!-- Service Card 2 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 text-center flex flex-col">
+                        <div class="flex justify-center mb-6"><div class="bg-red-100 p-4 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-red-600"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg></div></div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-3">Werterhaltung</h3>
+                        <p class="text-gray-600 flex-grow">Mit unserer Erfahrung im Wohnungsbau sind wir genau die Richtigen, um den Wert Ihrer Traumimmobilie zu erhalten und zu steigern.</p>
+                        <a href="#contact" class="nav-link mt-6 text-red-600 font-semibold hover:underline">Mehr dazu &rarr;</a>
+                    </div>
+                    <!-- Service Card 3 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 text-center flex flex-col">
+                        <div class="flex justify-center mb-6"><div class="bg-red-100 p-4 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-red-600"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg></div></div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-3">Neubau</h3>
+                        <p class="text-gray-600 flex-grow">Mit jahrzehntelanger Erfahrung planen und überwachen wir die Konstruktion Ihrer Traumimmobilie von Grund auf.</p>
+                        <a href="#contact" class="nav-link mt-6 text-red-600 font-semibold hover:underline">Mehr dazu &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section id="why-us" class="animated-section py-16 md:py-24 px-6 md:px-8 bg-white">
+            <div class="container mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Darauf legen wir großen Wert</h2>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                    <!-- Benefit 1 -->
+                    <div class="p-6">
+                        <div class="flex justify-center mb-4"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-red-600"><path d="M14 9a2 2 0 0 1-2 2H6l-4 4V4c0-1.1.9-2 2-2h8a2 2 0 0 1 2 2v5Z"></path><path d="M18 9h2a2 2 0 0 1 2 2v9l-4-4h-2a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2Z"></path></svg></div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Gute Beratung</h3>
+                        <p class="text-gray-600 text-sm">Wir nehmen uns Zeit für Sie und finden immer die richtigen Lösungen.</p>
+                    </div>
+                    <!-- Benefit 2 -->
+                    <div class="p-6">
+                        <div class="flex justify-center mb-4"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-red-600"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 9 2c-1.8 0-3.4.8-4.5 2.1A5.5 5.5 0 0 0 3 9.5c0 1.3.5 2.6 1.5 3.5.7.8 1.3 1.5 1.5 2.5"></path><path d="M9 18h6"></path><path d="M10 22h4"></path></svg></div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Gute Planung</h3>
+                        <p class="text-gray-600 text-sm">Ihre Vorstellungen und Wünsche sind die Basis für unsere ideenreiche Planung.</p>
+                    </div>
+                    <!-- Benefit 3 -->
+                    <div class="p-6">
+                        <div class="flex justify-center mb-4"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-red-600"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg></div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Gute Ausführung</h3>
+                        <p class="text-gray-600 text-sm">Wir gewährleisten eine fachkompetente und qualitativ hochwertige Umsetzung.</p>
+                    </div>
+                    <!-- Benefit 4 -->
+                    <div class="p-6">
+                        <div class="flex justify-center mb-4"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-red-600"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg></div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Große Zufriedenheit</h3>
+                        <p class="text-gray-600 text-sm">Ihr Vertrauen ist uns wichtig, und Ihre Zufriedenheit ist unser Ziel.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="animated-section py-16 md:py-24 px-6 md:px-8 bg-gray-50">
+            <div class="container mx-auto">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=2832&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Das SWN-Bau Team bei der Planung" class="rounded-lg shadow-2xl w-full">
+                    </div>
+                    <div>
+                        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Wir stellen uns vor</h2>
+                        <p class="text-gray-600 mb-4 leading-relaxed">Wir sind ein junges, leistungsorientiertes Team, das sich durch eine hohe Fachkompetenz auszeichnet. Wir verstehen, dass jedes Bauvorhaben einzigartig ist. Deshalb sind Sie uns wichtig und wir nehmen uns Zeit für Sie.</p>
+                        <p class="text-gray-600 mb-6 leading-relaxed font-semibold text-gray-700">Sie haben Vorstellungen und Wünsche? Wir haben die Ideen!</p>
+                        <a href="#contact" class="nav-link bg-red-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-red-700 transition-all duration-300 transform hover:scale-105 shadow-lg">Sprechen Sie mit uns!</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="projects" class="animated-section py-16 md:py-24 px-6 md:px-8 bg-white">
+            <div class="container mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Galerie</h2>
+                    <p class="text-lg text-gray-600 mt-2 max-w-2xl mx-auto">Ein Einblick in unsere Arbeit und die Qualität, die wir liefern.</p>
+                </div>
+                <div id="portfolio-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Portfolio items will be injected by JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="animated-section py-16 md:py-24 px-6 md:px-8 bg-gray-800 text-white">
+            <div class="container mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold">Ihre Nachricht an uns</h2>
+                    <p class="text-lg text-gray-300 mt-2">Wir freuen uns auf Ihr Projekt. Fordern Sie jetzt ein unverbindliches Angebot an.</p>
+                </div>
+                <div class="grid lg:grid-cols-2 gap-12">
+                    <div class="bg-gray-700 p-8 rounded-lg">
+                        <form id="contact-form">
+                            <div class="mb-4">
+                                <label for="name" class="block mb-2 font-medium">Name</label>
+                                <input type="text" id="name" name="name" required class="w-full bg-gray-600 border border-gray-500 rounded-lg px-4 py-2 focus:ring-red-500 focus:border-red-500 transition">
+                            </div>
+                            <div class="mb-4">
+                                <label for="email" class="block mb-2 font-medium">E-Mail-Adresse</label>
+                                <input type="email" id="email" name="email" required class="w-full bg-gray-600 border border-gray-500 rounded-lg px-4 py-2 focus:ring-red-500 focus:border-red-500 transition">
+                            </div>
+                            <div class="mb-4">
+                                <label for="phone" class="block mb-2 font-medium">Telefon</label>
+                                <input type="tel" id="phone" name="phone" class="w-full bg-gray-600 border border-gray-500 rounded-lg px-4 py-2 focus:ring-red-500 focus:border-red-500 transition">
+                            </div>
+                            <div class="mb-6">
+                                <label for="message" class="block mb-2 font-medium">Nachricht</label>
+                                <textarea id="message" name="message" rows="5" required class="w-full bg-gray-600 border border-gray-500 rounded-lg px-4 py-2 focus:ring-red-500 focus:border-red-500 transition"></textarea>
+                            </div>
+                            <button type="submit" id="submit-btn" class="w-full bg-red-600 font-bold py-3 px-6 rounded-lg hover:bg-red-700 transition-all duration-300 disabled:bg-red-400 disabled:cursor-not-allowed">Nachricht senden</button>
+                            <p id="submit-status" class="mt-4 text-green-400"></p>
+                        </form>
+                    </div>
+                    <div class="space-y-8">
+                        <div>
+                            <h3 class="text-2xl font-bold mb-4">Rufen Sie uns an</h3>
+                            <div class="space-y-4">
+                                <a href="tel:+4947623638258" class="flex items-center text-lg hover:text-red-400 transition-colors">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 mr-4 text-red-400"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                                    <span>+49 4762 3638258</span>
+                                </a>
+                                <a href="mailto:info@swn-bau.de" class="flex items-center text-lg hover:text-red-400 transition-colors">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 mr-4 text-red-400"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+                                    <span>info@swn-bau.de</span>
+                                </a>
+                                <div class="flex items-start text-lg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 mr-4 text-red-400 mt-1 flex-shrink-0"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                    <span>Michaelispassage 7<br>20459 Hamburg, Deutschland</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="h-64 md:h-80 w-full rounded-lg overflow-hidden shadow-xl">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2370.093433535948!2d9.98235231584627!3d53.54835798002209!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b18f03a5a43953%3A0x6a3a3e6b5e5a999d!2sMichaelispassage%207%2C%2020459%20Hamburg!5e0!3m2!1sde!2sde!4v1678888888888" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-8 px-6">
+        <div class="container mx-auto text-center">
+            <p>Copyright &copy; 2024 SWN-Bauunternehmen. Alle Rechte vorbehalten.</p>
+            <div class="flex justify-center space-x-4 mt-4">
+                <a href="#" class="hover:text-white transition">Impressum</a>
+                <a href="#" class="hover:text-white transition">Datenschutz</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/4947623638258" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 hover:scale-110 transition-all transform z-40 flex items-center justify-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+    </a>
+
+    <!-- Lightbox Structure -->
+    <div id="lightbox" class="hidden fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4">
+        <div class="relative max-w-4xl max-h-[90vh] w-full h-full">
+            <img id="lightbox-img" src="" alt="" class="w-full h-full object-contain">
+            <div class="absolute bottom-0 left-0 w-full bg-black/50 text-white p-4 text-center">
+                <h3 id="lightbox-title" class="text-lg font-bold"></h3>
+                <p id="lightbox-location"></p>
+            </div>
+            <button id="lightbox-close" class="absolute top-4 right-4 text-white bg-black/30 rounded-full p-2 hover:bg-black/50 transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
+            <button id="lightbox-prev" class="absolute left-4 top-1/2 -translate-y-1/2 text-white bg-black/30 rounded-full p-2 hover:bg-black/50 transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+            </button>
+            <button id="lightbox-next" class="absolute right-4 top-1/2 -translate-y-1/2 text-white bg-black/30 rounded-full p-2 hover:bg-black/50 transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 12 15 15 12 18 9"></polyline><polyline points="9 6 12 9 15 12 18 15"></polyline></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+
+</body>
+</html>
